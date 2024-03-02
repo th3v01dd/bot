@@ -19,7 +19,8 @@ const mineflayer = require("mineflayer");
         console.log(Bot${index + 1} logged in)};
       });
 
-
+ bots.push(bot);
+    }, 5000 * index); 
      
 
 let { username } = bot.nearestEntity(({ type }) => type === 'player')

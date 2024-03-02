@@ -9,6 +9,20 @@ const mineflayer = require("mineflayer");
     });
   }
 
+  const bots = [];
+
+  botConfigs.forEach((config, index) => {
+    setTimeout(() => {
+      const bot = mineflayer.createBot(config)};
+    
+      bot.on("login", () => {
+        console.log(Bot${index + 1} logged in)};
+      });
+
+
+     
+
 let { username } = bot.nearestEntity(({ type }) => type === 'player')
 
 bot.chat('username лох!')
+createBots(5);
